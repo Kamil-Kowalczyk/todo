@@ -1,0 +1,6 @@
+<h3>All tasks to do</h3>
+<ul>
+    <li *ngFor = "let todo of todos">
+        {{todo.name}}  <input type="checkbox"  [checked]= "todo.isDone">
+    </li>
+</ul>
